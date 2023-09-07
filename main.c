@@ -70,7 +70,7 @@ int main()
                 }
                 else if (metodoEconomia == '2')
                 {
-                    printf("O metodo 70/30 divide sua receita em 70%, para necessidades e 30%, para metas.\n");
+                    printf("O metodo 70/30 divide sua receita em 70%% para necessidades e 30%% para metas.\n");
                     printf("Necessidades: R$%.2f\n", receita * 0.7);
                     printf("Metas: R$%.2f\n", receita * 0.3);
 
