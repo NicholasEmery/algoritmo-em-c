@@ -12,7 +12,10 @@ int main()
     scanf("%f", &despesas);
 
     saldo = receita - despesas;
-    printf("O seu saldo previsto e de: R$%.2f\n", saldo);
+    if (saldo < 0)
+        printf("O seu saldo previsto e de: -R$%.2f\n", -saldo);
+    else
+        printf("O seu saldo previsto e de: R$%.2f\n", saldo);
 
     if (saldo < 0)
     {
@@ -59,7 +62,7 @@ int main()
 
                 char metodoEconomia;
                 printf("Qual metodo de divisao financeira você tem interesse em saber mais? (1 - 50/30/20, 2 - 70/30): ");
-                scanf(" %c", &metodoEconomia);
+                scanf(" %c", &metodoEconomia); 
 
                 if (metodoEconomia == '1')
                 {
